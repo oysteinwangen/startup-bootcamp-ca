@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Music Port</title>
-    <meta name="description" content="Musical instruments and equipment" />
+    <title>Øystein Wangen | Web Developer</title>
+    <meta
+      name="description"
+      content="Hi! My name is Øystein Wangen. I make experiences for the web."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,43 +23,25 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./logo/MusicPortFavicon.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./icons/Favicon.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <div class="bg-dark">
-        <div class="container">
-          <div class="top-bar">
-            <p class="fs-300 fw-300">Musical instruments and equipment</p>
-            <div
-              class="admin-menu login-link fs-300 fw-300"
-              data-visible="false"
-            ></div>
-          </div>
-        </div>
-      </div>
       <div class="bg-light">
-        <div class="container">
+        <div class="wide-container">
           <div class="main-nav">
-            <a class="main-nav__logo" href="./index.html"
-              ><img src="./logo/MusicPortLogo.svg" alt="Logo"
+            <a class="main-nav__logo" href="#home"
+              ><img src="./icons/Favicon.svg" alt="Logo"
             /></a>
             <button class="mobile-nav-toggle" aria-expanded="false"></button>
             <nav data-visible="false" class="main-nav__links">
               <ul>
-                <li><a class="active" href="./index.html">Home</a></li>
-                <li><a href="./products.html">Products</a></li>
+                <li class="nav-link"><a href="#about">About me</a></li>
+                <li class="nav-link"><a href="#work">Work</a></li>
+                <li class="nav-link"><a href="#process">Process</a></li>
               </ul>
-              <a href="./cart.html" class="main-nav__cart">
-                <div class="main-nav__cart-text">
-                  <i class="fas fa-shopping-cart"></i>
-                  <span>Cart</span>
-                </div>
-                <div class="cart-counter">0</div>
+              <a href="#contact" class="button nav-link">
+                <div>Contact me</div>
               </a>
             </nav>
           </div>
@@ -64,15 +49,46 @@
       </div>
     </header>
     <main>
-      <section class="bg-light"></section>
+      <section id="home" class="full-section">
+        <div class="container">
+          <p class="fs-900 fw-300">
+            Hi! My name is <span class="fw-700">Øystein Wangen.</span>
+          </p>
+          <p>
+            I'm a front-end developer who cares deeply about user experience.
+          </p>
+          <a href="#contact" class="button bg-dark mt-l">
+            <div>Contact me</div>
+          </a>
+        </div>
+      </section>
+      <section id="about" class="full-section">
+        <div class="container about-container">
+          <div class="about-left">
+            <h2 class="fs-900">About me</h2>
+            <p class="mt-m">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam magnam dolor, architecto temporibus corrupti distinctio
+              nisi, numquam illo, harum velit sint dolore delectus mollitia
+              reprehenderit! Officiis illum ut repellendus rem.
+            </p>
+          </div>
+          <img
+            class="about-right"
+            src="./images/profile-pic.jpg"
+            alt="Profile picture"
+          />
+        </div>
+      </section>
+      <section id="work" class="full-section"></section>
+      <section id="process" class="full-section"></section>
+      <section id="contact" class="full-section"></section>
     </main>
     <footer class="bg-dark">
       <div class="container">
-        <p>Copyright - Music Port</p>
+        <p>© Øystein Wangen</p>
       </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
-    <script src="./js/home.js" type="module"></script>
-    <script src="./js/getAllProducts.js" type="module"></script>
   </body>
 </html>

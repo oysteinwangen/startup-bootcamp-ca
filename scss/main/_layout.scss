@@ -40,6 +40,15 @@ body {
   margin-right: auto;
 }
 
+.wide-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mini-container {
   max-width: 50rem;
 }
@@ -53,9 +62,17 @@ body {
 section {
   padding: 2.5rem 0;
 }
+.full-section {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
 
 @media screen and (min-width: 50em) {
   section {
+    padding: 5rem 0;
+  }
+  .full-section {
     padding: 5rem 0;
   }
 }

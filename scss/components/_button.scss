@@ -1,15 +1,14 @@
 .button {
   display: inline-block;
   text-decoration: none;
-  padding: 0.5em 0.75em;
-  border-radius: 0.25em;
-  font-weight: 700;
+  padding: 0.5em 1em;
+  border-radius: 0.15em;
   background: var(--bg);
   color: var(--fg);
-  outline: none;
   border: none;
   cursor: pointer;
   font-weight: var(--fw-300);
+  font-size: var(--fs-300);
   &:hover {
     background: var(--bg-hover);
   }

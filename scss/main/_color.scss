@@ -4,10 +4,10 @@
   --clr-primary-800: #222831; /* DARK PRIMARY */
   --clr-primary-900: #161b22;
 
-  --clr-accent-400: #f05454; /* MAIN BRAND COLOR */
-  --clr-accent-500: #d34242;
+  --clr-accent-400: #274fa3; /* MAIN BRAND COLOR */
+  --clr-accent-500: #203b75;
 
-  --clr-bg-200: #f5ede9; /* MAIN LIGHT */
+  --clr-bg-200: #fff; /* MAIN LIGHT */
   --clr-bg-300: #e6d9d3;
 
   --clr-neutral-100: #fff;
@@ -38,7 +38,7 @@
 
 .bg-dark {
   --fg: var(--clr-neutral-100);
-  --bg: var(--clr-accent-400);
+  --bg: var(--clr-primary-900);
   --bg-hover: var(--clr-accent-500);
   color: var(--clr-neutral-200);
   background: linear-gradient(

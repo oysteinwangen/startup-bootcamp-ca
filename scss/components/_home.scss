@@ -1,0 +1,35 @@
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-left {
+  margin-right: 2rem;
+  & p {
+    max-width: 60ch;
+  }
+}
+
+.about-right {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 50rem) {
+  .about-left {
+    margin-right: 0rem;
+  }
+  .about-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-right {
+    margin: 3rem auto 0 auto;
+  }
+}
