@@ -60,19 +60,19 @@ body {
 }
 
 section {
-  padding: 2.5rem 0;
+  padding: 8rem 0;
 }
 .full-section {
   display: flex;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 50em) {
   section {
-    padding: 5rem 0;
+    padding: 8rem 0;
   }
   .full-section {
-    padding: 5rem 0;
+    padding: 8rem 0;
   }
 }

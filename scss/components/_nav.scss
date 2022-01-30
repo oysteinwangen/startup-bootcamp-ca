@@ -8,18 +8,24 @@
   margin-right: 5px;
 }
 
+.main-nav-sticky {
+  position: fixed;
+  top: 0;
+}
+
 .main-nav {
   padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 88.23px;
+  background-color: rgba($color: #fff, $alpha: 0.8);
   &__logo {
     margin-right: auto;
     padding-right: 3.5rem;
     & img {
       width: 100%;
-      max-width: 5rem;
+      max-width: 4rem;
     }
   }
   &__links {
@@ -80,7 +86,7 @@
         }
       }
       opacity: 0;
-      transition: opacity 500ms ease;
+      transition: opacity backdrop-filter 500ms ease;
     }
   }
 
